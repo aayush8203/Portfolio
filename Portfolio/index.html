@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ayush Mishra – Full Stack Web Developer & Engineering Student. Building modern, fast, and scalable web applications with HTML, CSS, JavaScript, Node.js, and MongoDB." />
+  <meta name="keywords" content="Ayush Mishra, Full Stack Developer, Web Developer, Portfolio, Node.js, MongoDB, JavaScript, Bootstrap, Engineering Student" />
+  <meta name="author" content="Ayush Mishra" />
+  <meta property="og:title" content="Ayush Mishra | Full Stack Web Developer" />
+  <meta property="og:description" content="Modern portfolio of Ayush Mishra – Full Stack Web Developer & Engineering Student." />
+  <meta property="og:type" content="website" />
+  <title>Ayush Mishra | Full Stack Web Developer</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+<!-- ===== PAGE LOADER ===== -->
+<div id="loader" role="status" aria-label="Loading">
+  <div class="loader-logo">&lt;AM /&gt;</div>
+  <div class="loader-bar">
+    <div class="loader-fill"></div>
+  </div>
+</div>
+
+<!-- ===== BACKGROUND EFFECTS ===== -->
+<div class="bg-effects" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" class="navbar navbar-expand-lg" role="navigation" aria-label="Main Navigation">
+  <div class="container">
+    <a class="navbar-brand" href="#hero" aria-label="Ayush Mishra Home">
+      <span>&lt;</span>AM<span>/&gt;</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="#hero" id="nav-hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" id="nav-about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills" id="nav-skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects" id="nav-projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services" id="nav-services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience" id="nav-exp">Journey</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" id="nav-contact">Contact</a></li>
+      </ul>
+      <a href="resume.pdf" download class="btn-primary-custom ms-3 d-none d-lg-inline-flex" id="nav-resume-btn">
+        <i class="bi bi-download"></i> Resume
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section id="hero">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for Opportunities
+        </div>
+        <p class="hero-greeting">हिंदी में नमस्ते — Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="gradient-text">Ayush</span><br />Mishra
+        </h1>
+        <div class="hero-role">
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-tagline">
+          Engineering student passionate about crafting <strong style="color:#00d4ff">high-performance</strong> digital experiences. I build end-to-end web applications — from pixel-perfect interfaces to robust backend APIs.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary-custom" id="hero-view-projects">
+            <i class="bi bi-grid-3x3-gap-fill"></i> View Projects
+          </a>
+          <a href="#contact" class="btn-glass" id="hero-hire-me">
+            <i class="bi bi-lightning-charge-fill"></i> Hire Me
+          </a>
+          <a href="resume.pdf" download class="btn-outline-custom" id="hero-download-resume">
+            <i class="bi bi-download"></i> Resume
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number"><span class="counter" data-target="10">0+</span></div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number"><span class="counter" data-target="5">0+</span></div>
+            <div class="stat-label">Tech Stack</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number"><span class="counter" data-target="2">0+</span></div>
+            <div class="stat-label">Hackathons</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-card-header">
+              <span class="code-dot code-dot-red"></span>
+              <span class="code-dot code-dot-yellow"></span>
+              <span class="code-dot code-dot-green"></span>
+              <span class="code-filename">developer.js</span>
+            </div>
+            <code>
+              <span class="code-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> <span class="code-bracket">= {</span></span>
+              <span class="code-line">  <span class="code-property">name</span><span class="code-bracket">:</span> <span class="code-string">"Ayush Mishra"</span><span class="code-bracket">,</span></span>
+              <span class="code-line">  <span class="code-property">role</span><span class="code-bracket">:</span> <span class="code-string">"Full Stack Developer"</span><span class="code-bracket">,</span></span>
+              <span class="code-line">  <span class="code-property">passion</span><span class="code-bracket">:</span> <span class="code-string">"Building cool stuff"</span><span class="code-bracket">,</span></span>
+              <span class="code-line">  <span class="code-property">stack</span><span class="code-bracket">: [</span></span>
+              <span class="code-line">    <span class="code-string">"HTML"</span><span class="code-bracket">,</span> <span class="code-string">"CSS"</span><span class="code-bracket">,</span></span>
+              <span class="code-line">    <span class="code-string">"JavaScript"</span><span class="code-bracket">,</span></span>
+              <span class="code-line">    <span class="code-string">"Node.js"</span><span class="code-bracket">,</span> <span class="code-string">"MongoDB"</span></span>
+              <span class="code-line">  <span class="code-bracket">],</span></span>
+              <span class="code-line">  <span class="code-property">available</span><span class="code-bracket">:</span> <span class="code-keyword">true</span><span class="code-bracket">,</span></span>
+              <span class="code-line">  <span class="code-property">coffeeCount</span><span class="code-bracket">:</span> <span class="code-number">∞</span></span>
+              <span class="code-line"><span class="code-bracket">};</span></span>
+              <span class="code-line"></span>
+              <span class="code-line"><span class="code-comment">// Always learning. Always building.</span></span>
+              <span class="code-line"><span class="code-variable">developer</span><span class="code-bracket">.</span><span class="code-property">build</span><span class="code-bracket">(</span><span class="code-string">"nextProject"</span><span class="code-bracket">);</span></span>
+            </code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>SCROLL</span>
+  </div>
+</section>
+
+<hr class="gradient-line" />
+
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-4 text-center reveal-left">
+        <div class="about-avatar-wrapper">
+          <div class="about-avatar">
+            👨‍💻
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring avatar-ring-2"></div>
+          </div>
+          <div class="avatar-tag tag-1">⚡ Full Stack</div>
+          <div class="avatar-tag tag-2">🚀 Open to Work</div>
+        </div>
+      </div>
+      <div class="col-lg-8 reveal-right">
+        <span class="section-label">// About Me</span>
+        <h2 class="section-title">Turning Ideas Into <span class="highlight">Digital Reality</span></h2>
+        <div class="about-card">
+          <p class="about-text">
+            I'm <strong>Ayush Mishra</strong>, an enthusiastic <strong>Full Stack Web Developer</strong> and Engineering student with a deep passion for building modern, high-performance web applications that solve real-world problems.
+          </p>
+          <p class="about-text">
+            From crafting <strong>pixel-perfect UIs</strong> to designing <strong>robust RESTful APIs</strong>, I love working across the entire development stack. I thrive on turning complex challenges into clean, scalable code solutions.
+          </p>
+          <p class="about-text">
+            Currently expanding my skills through <strong>hackathons, personal projects</strong>, and continuous learning — always staying at the cutting edge of web technology.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-code-slash"></i></div>
+              <span>Clean Code Practices</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-phone"></i></div>
+              <span>Mobile-First Design</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-gear"></i></div>
+              <span>Full Stack Projects</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-lightning"></i></div>
+              <span>Fast Problem Solver</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-git"></i></div>
+              <span>Version Control (Git)</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-cloud-upload"></i></div>
+              <span>Vercel Deployment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="gradient-line" />
+
+<!-- ===== SKILLS SECTION ===== -->
+<section id="skills">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">// Tech Arsenal</span>
+      <h2 class="section-title">My <span class="highlight">Tech Stack</span></h2>
+      <p class="section-subtitle mx-auto">Technologies I use to build fast, scalable, and beautiful digital products.</p>
+    </div>
+    <div class="d-flex justify-content-center reveal">
+      <div class="skills-tabs">
+        <button class="skill-tab active" data-category="all" id="tab-all">⚡ All Skills</button>
+        <button class="skill-tab" data-category="frontend" id="tab-frontend">🎨 Frontend</button>
+        <button class="skill-tab" data-category="backend" id="tab-backend">🔧 Backend</button>
+        <button class="skill-tab" data-category="database" id="tab-database">🗄️ Database</button>
+        <button class="skill-tab" data-category="tools" id="tab-tools">🛠️ Tools</button>
+      </div>
+    </div>
+    <div id="skillsGrid" class="skills-grid"></div>
+  </div>
+</section>
+
+<hr class="gradient-line" />
+
+<!-- ===== PROJECTS SECTION ===== -->
+<section id="projects">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">// My Work</span>
+      <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+      <p class="section-subtitle mx-auto">Handcrafted digital products — from concept to deployment.</p>
+    </div>
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-6 reveal delay-1">
+        <div class="project-card">
+          <div class="project-thumbnail project-thumb-1">
+            <span>🌐</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">A futuristic, modern developer portfolio with dark theme, glassmorphism design, smooth animations, typing effects, and interactive skill cards. Fully responsive and SEO-optimized.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="bi bi-eye"></i> Live Demo</a>
+              <a href="https://github.com/ayushmishra" class="project-link" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-6 reveal delay-2">
+        <div class="project-card">
+          <div class="project-thumbnail project-thumb-2">
+            <span>🏢</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Bootstrap 5</span>
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+            </div>
+            <h3 class="project-title">Business Website</h3>
+            <p class="project-desc">A professional multi-section business website with hero banners, services, testimonials, and a contact form. Features smooth scroll, animated statistics, and a modern responsive layout.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="bi bi-eye"></i> Live Demo</a>
+              <a href="https://github.com/ayushmishra" class="project-link" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-6 col-lg-6 reveal delay-3">
+        <div class="project-card">
+          <div class="project-thumbnail project-thumb-3">
+            <span>🔐</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Express.js</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <h3 class="project-title">Full Stack Auth System</h3>
+            <p class="project-desc">A secure login/signup web application with JWT authentication, password hashing (bcrypt), protected routes, and a clean dashboard UI. Built with the MERN-lite stack.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="bi bi-eye"></i> Live Demo</a>
+              <a href="https://github.com/ayushmishra" class="project-link" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-6 col-lg-6 reveal delay-4">
+        <div class="project-card">
+          <div class="project-thumbnail project-thumb-4">
+            <span>🚀</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">Bootstrap</span>
+            </div>
+            <h3 class="project-title">Product Landing Page</h3>
+            <p class="project-desc">A high-conversion product landing page with animated hero section, feature highlights, pricing cards, and CTA buttons. Optimized for speed and mobile viewing experience.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="bi bi-eye"></i> Live Demo</a>
+              <a href="https://github.com/ayushmishra" class="project-link" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="gradient-line" />
+
+<!-- ===== SERVICES SECTION ===== -->
+<section id="services">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">// What I Offer</span>
+      <h2 class="section-title">My <span class="highlight">Services</span></h2>
+      <p class="section-subtitle mx-auto">Comprehensive web development services from design to deployment.</p>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3 reveal delay-1">
+        <div class="service-card">
+          <div class="service-icon-wrap">🌐</div>
+          <h3 class="service-title">Full Website Development</h3>
+          <p class="service-desc">End-to-end website development — from database design to live deployment.</p>
+          <ul class="service-features">
+            <li>Responsive Design</li>
+            <li>SEO Optimized</li>
+            <li>Fast Performance</li>
+            <li>Cross-browser Compatible</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal delay-2">
+        <div class="service-card">
+          <div class="service-icon-wrap">🎨</div>
+          <h3 class="service-title">Frontend UI Design</h3>
+          <p class="service-desc">Pixel-perfect, modern UI/UX implementation with smooth animations.</p>
+          <ul class="service-features">
+            <li>Bootstrap 5 Grid</li>
+            <li>CSS Animations</li>
+            <li>Mobile-First</li>
+            <li>Glassmorphism UI</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal delay-3">
+        <div class="service-card">
+          <div class="service-icon-wrap">⚙️</div>
+          <h3 class="service-title">Backend API Development</h3>
+          <p class="service-desc">Robust and scalable REST APIs built with Node.js and Express.js.</p>
+          <ul class="service-features">
+            <li>RESTful APIs</li>
+            <li>JWT Authentication</li>
+            <li>MongoDB Integration</li>
+            <li>Error Handling</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal delay-4">
+        <div class="service-card">
+          <div class="service-icon-wrap">☁️</div>
+          <h3 class="service-title">Website Deployment</h3>
+          <p class="service-desc">Hassle-free deployment and hosting on modern cloud platforms.</p>
+          <ul class="service-features">
+            <li>Vercel Deployment</li>
+            <li>GitHub CI/CD</li>
+            <li>Custom Domains</li>
+            <li>Env Configuration</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="gradient-line" />
+
+<!-- ===== EXPERIENCE / JOURNEY SECTION ===== -->
+<section id="experience">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">// My Journey</span>
+      <h2 class="section-title">Experience &amp; <span class="highlight">Learning</span></h2>
+      <p class="section-subtitle mx-auto">A continuous journey of building, learning, and growing.</p>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="row g-4 mb-5">
+      <div class="col-6 col-md-3 reveal delay-1">
+        <div class="exp-stat-card">
+          <div class="exp-stat-number">10+</div>
+          <div class="exp-stat-label">Projects Completed</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 reveal delay-2">
+        <div class="exp-stat-card">
+          <div class="exp-stat-number">2+</div>
+          <div class="exp-stat-label">Hackathons Participated</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 reveal delay-3">
+        <div class="exp-stat-card">
+          <div class="exp-stat-number">5+</div>
+          <div class="exp-stat-label">Technologies Learned</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 reveal delay-4">
+        <div class="exp-stat-card">
+          <div class="exp-stat-number">∞</div>
+          <div class="exp-stat-label">Coffee Consumed ☕</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="timeline">
+
+          <div class="timeline-item reveal delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">🏆 2024 — Hackathon</div>
+              <h4 class="timeline-title">Hackathon Participant</h4>
+              <p class="timeline-desc">Participated in a 24-hour hackathon, collaborating with a team to build a real-world problem-solving web application under tight deadlines. Gained experience in rapid prototyping and teamwork.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal delay-2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">🚀 2024 — Full Stack Project</div>
+              <h4 class="timeline-title">Built Full Stack Auth System</h4>
+              <p class="timeline-desc">Developed a complete login/signup system with JWT authentication, MongoDB database, Express.js backend, and a responsive frontend. Deployed live on Vercel.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal delay-3">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">🎓 2023 — Engineering College</div>
+              <h4 class="timeline-title">Enrolled in Engineering Program</h4>
+              <p class="timeline-desc">Started my engineering journey with a focus on computer science fundamentals, data structures, algorithms, and web development. Simultaneously building real-world projects to apply theoretical knowledge.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal delay-4">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">💻 2023 — Web Dev Journey</div>
+              <h4 class="timeline-title">Started Web Development</h4>
+              <p class="timeline-desc">Began learning HTML, CSS, and JavaScript from scratch. Built multiple static websites and progressed to Bootstrap layouts, then moved to backend development with Node.js and MongoDB.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal delay-5">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">🔮 Present — Continuous Learning</div>
+              <h4 class="timeline-title">Expanding Full Stack Skills</h4>
+              <p class="timeline-desc">Actively learning advanced JavaScript, React.js fundamentals, API design patterns, and cloud deployment strategies. Participating in open-source and building side projects consistently.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="gradient-line" />
+
+<!-- ===== CONTACT SECTION ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">// Get In Touch</span>
+      <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+      <p class="section-subtitle mx-auto">Have a project in mind? Let's build something amazing together!</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Contact Info -->
+      <div class="col-lg-5 reveal-left">
+        <div class="contact-card h-100">
+          <span class="section-label mb-4 d-inline-block">Contact Info</span>
+
+          <a href="mailto:ayushmishra@example.com" class="contact-info-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value">ayushmishra@example.com</div>
+            </div>
+          </a>
+
+          <a href="https://github.com/ayushmishra" target="_blank" rel="noopener" class="contact-info-item">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <div class="contact-detail-label">GitHub</div>
+              <div class="contact-detail-value">github.com/ayushmishra</div>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/ayushmishra" target="_blank" rel="noopener" class="contact-info-item">
+            <div class="contact-icon">💼</div>
+            <div>
+              <div class="contact-detail-label">LinkedIn</div>
+              <div class="contact-detail-value">linkedin.com/in/ayushmishra</div>
+            </div>
+          </a>
+
+          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" class="contact-info-item">
+            <div class="contact-icon">💬</div>
+            <div>
+              <div class="contact-detail-label">WhatsApp</div>
+              <div class="contact-detail-value">Available on WhatsApp</div>
+            </div>
+          </a>
+
+          <div class="social-links mt-4">
+            <a href="https://github.com/ayushmishra" target="_blank" rel="noopener" class="social-link" title="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/ayushmishra" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/ayushmishra" target="_blank" rel="noopener" class="social-link" title="Twitter/X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="mailto:ayushmishra@example.com" class="social-link" title="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-7 reveal-right">
+        <div class="contact-card h-100">
+          <span class="section-label mb-4 d-inline-block">Send a Message</span>
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="contactName" class="form-label-custom">Your Name</label>
+                  <input type="text" id="contactName" class="form-control-custom" placeholder="John Doe" required />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label-custom">Email Address</label>
+                  <input type="email" id="contactEmail" class="form-control-custom" placeholder="john@example.com" required />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject" class="form-label-custom">Subject</label>
+              <input type="text" id="contactSubject" class="form-control-custom" placeholder="Project Collaboration / Job Opportunity" />
+            </div>
+            <div class="form-group">
+              <label for="contactMessage" class="form-label-custom">Message</label>
+              <textarea id="contactMessage" class="form-control-custom" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary-custom w-100 mt-2" id="contactSubmitBtn">
+              <i class="bi bi-send-fill"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="footer-brand">&lt;AM /&gt;</div>
+        <div class="footer-tagline">Full Stack Web Developer | Engineering Student</div>
+      </div>
+      <div class="col-md-6 footer-copyright text-md-end mt-3 mt-md-0">
+        <p>Designed &amp; Built with <span class="footer-heart">❤️</span> by <strong style="color:var(--primary)">Ayush Mishra</strong></p>
+        <p style="font-size:0.75rem; color:var(--text-muted)">© 2025 · All Rights Reserved · Made in India 🇮🇳</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== BACK TO TOP ===== -->
+<button id="backToTop" aria-label="Back to top" style="position:fixed;bottom:96px;right:30px;z-index:998;width:44px;height:44px;border-radius:12px;background:var(--gradient-1);border:none;color:#fff;font-size:1.1rem;cursor:pointer;opacity:0;pointer-events:none;transition:all 0.3s ease;box-shadow:var(--glow-blue);">
+  <i class="bi bi-chevron-up"></i>
+</button>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+  <i class="bi bi-whatsapp" style="color:#fff;"></i>
+</a>
+
+<!-- ===== TOAST ===== -->
+<div id="toast" role="alert" aria-live="polite"></div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+</body>
+</html>
