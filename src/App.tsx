@@ -1,34 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    <div className="portfolio-container">
+      <header className="hero">
+        <h1>Ayush Mishra</h1>
+        <p className="title">Full-Stack Developer & IoT Enthusiast</p>
+        <p className="intro">Passionate about building scalable web applications and developing smart, innovative IoT solutions.</p>
+      </header>
+
+      <section className="section">
+        <h2>Projects</h2>
+        <div className="grid">
+          <div className="card">
+            <h3>LifeLane</h3>
+            <p>An IoT-based intelligent traffic management system for emergency vehicles, ensuring rapid clearance and smart routing.</p>
+          </div>
+          <div className="card">
+            <h3>VibeStay</h3>
+            <p>A modern, full-stack application for managing and booking premium stays with a seamless user experience.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>Skills</h2>
+        <ul className="skills-list">
+          <li>React</li>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>IoT & Arduino</li>
+          <li>Git</li>
+        </ul>
+      </section>
+
+      <footer className="footer section">
+        <h2>Contact</h2>
+        <p style={{ margin: '0 0 0.5rem 0' }}>
+          Email:{' '}
+          <a href="mailto:ayush@example.com">ayush@example.com</a>
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+        <p style={{ margin: 0 }}>
+          GitHub:{' '}
+          <a href="https://github.com/aayush8203" target="_blank" rel="noopener noreferrer">
+            @aayush8203
+          </a>
+        </p>
+      </footer>
+    </div>
   )
 }
 
